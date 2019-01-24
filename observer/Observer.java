@@ -7,7 +7,8 @@ package observer;
 
 /**
  *
- * @author ominext
+ * @author CaoKD
+ * This class is Observer component
  */
 public interface Observer {
     void update(int saralyMonth);

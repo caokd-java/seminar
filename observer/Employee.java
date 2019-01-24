@@ -7,7 +7,8 @@ package observer;
 
 /**
  *
- * @author ominext
+ * @author CaoKD
+ * This class is ConcreteObserver
  */
 public class Employee implements Observer{
     

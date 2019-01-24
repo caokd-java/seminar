@@ -10,7 +10,8 @@ import java.util.List;
 
 /**
  *
- * @author ominext
+ * @author CaoKD
+ * This class is ConcreateSubject
  */
 public class Salary implements AccouttingDepartment{
     
@@ -33,9 +34,9 @@ public class Salary implements AccouttingDepartment{
 
     @Override
     public void notifyObserver() {
-        for(Observer observer : obs){
-            observer.update(salaryMonth); // cap nhat thong tin den tat ca khach hang dang ky nhan sms tu 199
-        }
+        obs.forEach((observer) -> {
+            observer.update(salaryMonth);
+        });
     }
     
 }

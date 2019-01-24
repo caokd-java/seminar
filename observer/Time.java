@@ -11,7 +11,7 @@ import java.util.TimerTask;
 
 /**
  *
- * @author ominext
+ * @author CaoKD
  */
 public class Time {
     private final Timer mTimer = new Timer();
@@ -51,11 +51,6 @@ public class Time {
     
     void start() {
         calendar.set(Calendar.DAY_OF_MONTH, 1);
-//        calendar.set(Calendar.HOUR_OF_DAY, 0);
-//        calendar.set(Calendar.MINUTE, 0);
-//        calendar.set(Calendar.SECOND, 0);
-//        calendar.set(Calendar.MILLISECOND, 0);
-        
         mTimer.scheduleAtFixedRate(timerTask, 1000, 1000);
     }
 }

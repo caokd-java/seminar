@@ -7,7 +7,8 @@ package observer;
 
 /**
  *
- * @author ominext
+ * @author CaoKD
+ * This class is Subject
  */
 public interface AccouttingDepartment {
     void registerObserver(Observer observer);
